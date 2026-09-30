@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@civicpulse/shared": "0.1.0",
+    "@google-cloud/firestore": "^9.2.0",
+    "@google-cloud/storage": "^8.2.0",
     "compression": "^1.8.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
