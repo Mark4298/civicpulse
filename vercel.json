@@ -1,0 +1,8 @@
+{
+  "buildCommand": "npm --prefix shared run build && npm --prefix frontend run build",
+  "outputDirectory": "frontend/dist",
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://civicpulse-n7ec.onrender.com/api/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
