@@ -1,0 +1,272 @@
+[
+  {
+    "id": "in-delhi",
+    "name": "Delhi",
+    "country": "India",
+    "lat": 28.6139,
+    "lng": 77.209,
+    "infraScore": 6,
+    "population": 16787941
+  },
+  {
+    "id": "in-mumbai",
+    "name": "Mumbai",
+    "country": "India",
+    "lat": 19.076,
+    "lng": 72.8777,
+    "infraScore": 7,
+    "population": 12442373
+  },
+  {
+    "id": "in-bengaluru",
+    "name": "Bengaluru",
+    "country": "India",
+    "lat": 12.9716,
+    "lng": 77.5946,
+    "infraScore": 7,
+    "population": 8443675
+  },
+  {
+    "id": "in-kolkata",
+    "name": "Kolkata",
+    "country": "India",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "infraScore": 6,
+    "population": 4496694
+  },
+  {
+    "id": "in-chennai",
+    "name": "Chennai",
+    "country": "India",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "infraScore": 7,
+    "population": 4646732
+  },
+  {
+    "id": "in-hyderabad",
+    "name": "Hyderabad",
+    "country": "India",
+    "lat": 17.385,
+    "lng": 78.4867,
+    "infraScore": 7,
+    "population": 6993262
+  },
+  {
+    "id": "br-sao-paulo",
+    "name": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5505,
+    "lng": -46.6333,
+    "infraScore": 7,
+    "population": 11451999
+  },
+  {
+    "id": "br-rio",
+    "name": "Rio de Janeiro",
+    "country": "Brazil",
+    "lat": -22.9068,
+    "lng": -43.1729,
+    "infraScore": 6,
+    "population": 6211423
+  },
+  {
+    "id": "br-brasilia",
+    "name": "Brasília",
+    "country": "Brazil",
+    "lat": -15.7939,
+    "lng": -47.8828,
+    "infraScore": 8,
+    "population": 2817381
+  },
+  {
+    "id": "br-salvador",
+    "name": "Salvador",
+    "country": "Brazil",
+    "lat": -12.9777,
+    "lng": -38.5016,
+    "infraScore": 6,
+    "population": 2417678
+  },
+  {
+    "id": "br-recife",
+    "name": "Recife",
+    "country": "Brazil",
+    "lat": -8.0476,
+    "lng": -34.877,
+    "infraScore": 6,
+    "population": 1488920
+  },
+  {
+    "id": "br-porto-alegre",
+    "name": "Porto Alegre",
+    "country": "Brazil",
+    "lat": -30.0346,
+    "lng": -51.2177,
+    "infraScore": 7,
+    "population": 1332570
+  },
+  {
+    "id": "ru-moscow",
+    "name": "Moscow",
+    "country": "Russia",
+    "lat": 55.7558,
+    "lng": 37.6173,
+    "infraScore": 9,
+    "population": 13104177
+  },
+  {
+    "id": "ru-st-petersburg",
+    "name": "Saint Petersburg",
+    "country": "Russia",
+    "lat": 59.9311,
+    "lng": 30.3609,
+    "infraScore": 8,
+    "population": 5601911
+  },
+  {
+    "id": "ru-kazan",
+    "name": "Kazan",
+    "country": "Russia",
+    "lat": 55.7961,
+    "lng": 49.1064,
+    "infraScore": 8,
+    "population": 1308660
+  },
+  {
+    "id": "ru-novosibirsk",
+    "name": "Novosibirsk",
+    "country": "Russia",
+    "lat": 55.0084,
+    "lng": 82.9357,
+    "infraScore": 7,
+    "population": 1633851
+  },
+  {
+    "id": "ru-yekaterinburg",
+    "name": "Yekaterinburg",
+    "country": "Russia",
+    "lat": 56.8389,
+    "lng": 60.6057,
+    "infraScore": 7,
+    "population": 1544376
+  },
+  {
+    "id": "ru-vladivostok",
+    "name": "Vladivostok",
+    "country": "Russia",
+    "lat": 43.1155,
+    "lng": 131.8855,
+    "infraScore": 7,
+    "population": 603519
+  },
+  {
+    "id": "cn-beijing",
+    "name": "Beijing",
+    "country": "China",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "infraScore": 9,
+    "population": 21893095
+  },
+  {
+    "id": "cn-shanghai",
+    "name": "Shanghai",
+    "country": "China",
+    "lat": 31.2304,
+    "lng": 121.4737,
+    "infraScore": 9,
+    "population": 24870895
+  },
+  {
+    "id": "cn-guangzhou",
+    "name": "Guangzhou",
+    "country": "China",
+    "lat": 23.1291,
+    "lng": 113.2644,
+    "infraScore": 8,
+    "population": 18676605
+  },
+  {
+    "id": "cn-chengdu",
+    "name": "Chengdu",
+    "country": "China",
+    "lat": 30.5728,
+    "lng": 104.0668,
+    "infraScore": 8,
+    "population": 20937757
+  },
+  {
+    "id": "cn-wuhan",
+    "name": "Wuhan",
+    "country": "China",
+    "lat": 30.5928,
+    "lng": 114.3055,
+    "infraScore": 8,
+    "population": 12326518
+  },
+  {
+    "id": "cn-shenzhen",
+    "name": "Shenzhen",
+    "country": "China",
+    "lat": 22.5431,
+    "lng": 114.0579,
+    "infraScore": 9,
+    "population": 17560061
+  },
+  {
+    "id": "za-johannesburg",
+    "name": "Johannesburg",
+    "country": "South Africa",
+    "lat": -26.2041,
+    "lng": 28.0473,
+    "infraScore": 6,
+    "population": 5635127
+  },
+  {
+    "id": "za-cape-town",
+    "name": "Cape Town",
+    "country": "South Africa",
+    "lat": -33.9249,
+    "lng": 18.4241,
+    "infraScore": 8,
+    "population": 4618000
+  },
+  {
+    "id": "za-durban",
+    "name": "Durban",
+    "country": "South Africa",
+    "lat": -29.8587,
+    "lng": 31.0218,
+    "infraScore": 6,
+    "population": 3442361
+  },
+  {
+    "id": "za-pretoria",
+    "name": "Pretoria",
+    "country": "South Africa",
+    "lat": -25.7479,
+    "lng": 28.2293,
+    "infraScore": 7,
+    "population": 2921488
+  },
+  {
+    "id": "za-gqeberha",
+    "name": "Gqeberha",
+    "country": "South Africa",
+    "lat": -33.9608,
+    "lng": 25.6022,
+    "infraScore": 6,
+    "population": 1260000
+  },
+  {
+    "id": "za-bloemfontein",
+    "name": "Bloemfontein",
+    "country": "South Africa",
+    "lat": -29.0852,
+    "lng": 26.1596,
+    "infraScore": 7,
+    "population": 256185
+  }
+]

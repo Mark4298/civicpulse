@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "name": "CivicPulse MinGW",
+      "includePath": [
+        "${workspaceFolder}/engine",
+        "${workspaceFolder}/engine/include"
+      ],
+      "defines": ["JSON_HAS_CPP_14"],
+      "compilerPath": "C:/MinGW/bin/g++.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,52 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return signedIn()
+        && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+        && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    match /users/{userId} {
+      allow read: if signedIn() && (request.auth.uid == userId || isAdmin());
+      allow create: if signedIn()
+        && request.auth.uid == userId
+        && request.resource.data.uid == userId
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.keys().hasOnly([
+          'uid', 'email', 'displayName', 'state', 'district', 'createdAt'
+        ]);
+      allow update: if signedIn()
+        && request.auth.uid == userId
+        && request.resource.data.uid == userId
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.get('role', null) == resource.data.get('role', null)
+        && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['role'])
+        && request.resource.data.keys().hasOnly([
+          'uid', 'email', 'displayName', 'role', 'state', 'district', 'createdAt'
+        ]);
+      allow delete: if false;
+    }
+
+    match /districts/{districtId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /complaints/{complaintId} {
+      allow create: if signedIn()
+        && request.resource.data.id == complaintId
+        && request.resource.data.userId == request.auth.uid
+        && request.resource.data.status == 'submitted';
+      allow read: if isAdmin()
+        || (signedIn() && resource.data.userId == request.auth.uid);
+      allow update, delete: if isAdmin();
+    }
+
+    // Admin SDK backend calls bypass Firestore rules; the demo /api/hotspots GET remains public.
+  }
+}
