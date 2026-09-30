@@ -164,14 +164,14 @@ export async function shouldServeDemoAnalytics(): Promise<boolean> {
 
   firestoreCheck = (async () => {
     try {
-      await withTimeout(db.collection("complaints").limit(1).get(), 4000);
+      await withTimeout(db.collection("complaints").limit(1).get(), 10000);
       firestoreUnavailable = false;
     } catch (error) {
       firestoreUnavailable = true;
       if (Date.now() - lastWarningAt >= 60_000) {
         lastWarningAt = Date.now();
         logger.warn(
-          `Firestore unavailable; demo analytics enabled (${error instanceof Error ? error.constructor.name : typeof error})`,
+          `Firestore unavailable; demo analytics enabled (${error instanceof Error ? `${error.constructor.name}: ${error.message}` : typeof error})`,
         );
       }
     } finally {
